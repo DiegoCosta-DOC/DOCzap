@@ -4,80 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>doczap</title>
+    <link rel="stylesheet" href="./style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.1/socket.io.js" integrity="sha512-Z6C1p1NIexPj5MsVUunW4pg7uMX6/TT3CUVldmjXx2kpip1eZcrAnxIusDxyFIikyM9A61zOVNgvLr/TGudOQg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     
 </head>
 <body>
-    <style>
-
-        * {
-            box-sizing: border-box;
-        }
-    
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-    
-        #titulo {
-            background-color: #075E54;
-            color: #FFF;
-            padding: 10px;
-            text-align: center;
-        }
-    
-        #bemvindo {
-            padding: 10px;
-            height: calc(100vh - 150px);
-            overflow-y: scroll;
-        }
-    
-        #bemvindo p {
-            background-color: #DCF8C6;
-            padding: 10px;
-            border-radius: 10px;
-            margin: 10px 0;
-        }
-    
-        #caixas_mensagens {
-            display: flex;
-            align-items: center;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            background-color: #F4F4F4;
-            padding: 10px;
-            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-        }
-    
-        #caixas_mensagens input[type="text"] {
-            padding: 10px;
-            border: none;
-            outline: none;
-            flex: 1;
-        }
-    
-        #caixas_mensagens input#usuario {
-            margin-right: 10px;
-            width: 30%;
-        }
-    
-        #caixas_mensagens input#mensagem {
-            flex: 1;
-        }
-    
-        #caixas_mensagens button {
-            padding: 10px 20px;
-            background-color: #075E54;
-            color: #FFF;
-            border: none;
-            outline: none;
-            cursor: pointer;
-            margin-left: 10px;
-        }
-        </style>
 
     <div id="titulo">
         <h1>DOCzap</h1> 
